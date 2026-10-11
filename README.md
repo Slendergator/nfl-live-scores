@@ -28,7 +28,7 @@ sudo apt install python3-tk
 ## Usage
 
 ```bash
-python nfl_live_scores.py
+python nfl.py
 ```
 
 | Control | Action |
@@ -41,7 +41,7 @@ The sidebar starts empty and only logs changes that happen while the app is open
 
 ## Configuration
 
-These constants are at the top of `nfl_live_scores.py`:
+These constants are at the top of `nfl.py`:
 
 | Constant | Default | What it does |
 |---|---|---|

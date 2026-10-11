@@ -5,7 +5,7 @@
 - Logs every score change, kickoff and final in the sidebar
 - Games that just changed glow gold until the next update
 
-Run:  python nfl_scoreboard.py
+Run:  python nfl.py
 No API key or third-party packages needed.
 """
 
