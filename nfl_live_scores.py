@@ -448,7 +448,8 @@ class ScoreboardApp:
             tk.Label(content, text=g["last_play"], font=F_SMALL, fg=MUTED, bg=CARD,
                      wraplength=SIDEBAR_WIDTH - 70, justify="left", anchor="w").pack(fill="x", pady=(4, 0))
 
-        children = [w for w in self.log.inner.winfo_children() if w is not entry and w is not self.log_placeholder]
+        # pack_slaves() is in on-screen order (newest first); winfo_children() is creation order
+        children = [w for w in self.log.inner.pack_slaves() if w is not self.log_placeholder]
         if children:
             entry.pack(fill="x", padx=(8, 12), pady=4, before=children[0])
         else:
